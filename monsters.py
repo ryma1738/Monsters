@@ -13,15 +13,15 @@ def main():
             monster = monster.strip()
             monster_names.append(monster)
             total += 1
-    while True:
+#     while True:
         index = randint(0, total)
-        print(monster_names[index])
-        more = input('Get another monster name? (Y/N): ')
-        more = more.upper()
-        if more == 'N':
-            exit()
-        else:
-            continue
+        print("Monster Name : " + monster_names[index])
+#         more = input('Get another monster name? (Y/N): ')
+#         more = more.upper()
+#         if more == 'N':
+#             exit()
+#         else:
+#             continue
 
 if __name__ == "__main__":
     main()
